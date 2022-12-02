@@ -4,6 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="619.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejjavafx.HelloController">
    <children>
@@ -13,12 +14,39 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fitHeight="86.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="86.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@persona.png" />
+               </image></ImageView>
+            <ImageView fitHeight="160.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@libro.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@manoLibro.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@manoLibro.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@puertaSalir.png" />
+               </image>
+            </ImageView>
          </children>
       </GridPane>
       <GridPane layoutY="537.0" prefHeight="84.0" prefWidth="675.0" style="-fx-background-color: #288996;">
@@ -43,11 +71,23 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label fx:id="labelCode" text="Code:" GridPane.halignment="CENTER" />
+            <Label fx:id="labelCode" text="Code:" textFill="WHITE" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
             <TextField prefHeight="26.0" prefWidth="458.0" GridPane.columnIndex="1" />
-            <Label fx:id="labelLN" text="First Name:" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Label fx:id="labelSN" text="Last Name:" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Label fx:id="labelBirth" text="Birthdate:" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label fx:id="labelLN" text="First Name:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelSN" text="Last Name:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelBirth" text="Birthdate:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
