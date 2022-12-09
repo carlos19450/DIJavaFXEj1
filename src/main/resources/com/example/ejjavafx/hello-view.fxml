@@ -58,6 +58,25 @@
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" rotate="92.0" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@lupa.png" />
+               </image></ImageView>
+            <ImageView fitHeight="121.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@suma.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="308.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@lapiz.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
       </GridPane>
       <GridPane layoutY="83.0" prefHeight="454.0" prefWidth="675.0" style="-fx-background-color: #40ae96;">
         <columnConstraints>
